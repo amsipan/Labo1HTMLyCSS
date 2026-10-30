@@ -1,12 +1,60 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 /* Estilos Repetitivos */
 
 :root{
+
+    /* Colors */
+    --primary-text-color: #1a202c;
+    --secondary-text-color: #fafafa;
+    --anchore-text-color: #465062;
+    --strong-text-color: #bf6ab2;
+    --dragadado: #9468bd;
+
+    /* Background color*/
+    --bg-header-color: #fafafa;
+    --bg-about-color: #ddeedd;
+
+    --mix-color-one: #5a1895;
+    --mix-color-two: #483ed9;
+
+    /* FONT */
+    --f-family: Arial;
+    --titles-font-size: 24px;
+    --hover-text: 18px;
+    --text-md: 14px;
+
+    /* DISPLAYS */
+    --flex: flex;
+    --grid: grid;
+
+    --grid-two-columns: 1fr 1fr;
+
+    /*Border*/
+    --b-radius-md: 4px;
+    --b-radius-xl: 8px;
+    --no-border: none;
+    --bottom-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+
+    /* Ancho y alto */
+    --all-width: 100%;
+    --all-heigth: 100%;
+
+    /* Paddings*/
+    --button-size: 10px 20px;
+
+    /* Justify Content*/
+    --j-around: space-around;
+    --j-between: space-between;
+    --j-evenly: space-evenly;
+    --j-center: center;
+
+    /* ALign Items*/
+    --a-center: center;
+    --a-stretch: stretch;
+
+
+    /* List and anchore style*/
+    --ul-style: none;
+    --a-style: none;
 
     /*Estilos Velky*/
 
@@ -17,8 +65,152 @@
     /*Estilos Jhonny*/
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--f-family);
+}
+
+/* Estilos generales*/
+    /* Displays */
+.flex{
+    display: var(--flex);
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-two-columns{
+    grid-template-columns: var(--grid-two-columns);
+}
+
+    /*Font */
+.f-family{
+    font-family: var(--f-family);
+}
+
+.medium-size-text {
+    font-size: var(--text-md);
+}
+
+.title {
+    font-size: var(--titles-font-size);
+}
+
+    /*Ancho y Alto*/
+.all-width {
+    width: var(--all-width);
+}
+
+.all-heigth {
+    height: var(--all-heigth);
+}
+
+    /* Paddings */
+
+.button-size{
+    padding: var(--button-size);
+}
+
+    /* Jusitfy Content*/
+.j-center {
+    justify-content: var(--j-center);
+}
+
+.j-between {
+    justify-content: var(--j-between);
+}
+
+.j-evenly {
+    justify-content: var(--j-evenly);
+}
+
+    /* Align Items*/
+.a-center {
+    align-items: var(--a-center);
+}
+
+.a-stretch {
+    align-items: var(--a-stretch);
+}
+
+
+    /* Border */
+.b-medium-radius{
+    border-radius: var(--b-radius-md);
+}
+
+.bottom-shadow {
+    box-shadow: var(--bottom-shadow)
+}
+
+    /* List y anchore style*/
+.list-style {
+    list-style-type: var(--ul-style);
+}
+
+.a-style{
+    text-decoration: var(--a-style);
+}
+
+    /* Color */
+.anchore-color {
+    color: var(--anchore-text-color);
+}
+
+.secondary-color {
+    color: var(--secondary-text-color);
+}
+
+    /* Backgound y Mixed Colors*/
+.bg-mix-one {
+    background: linear-gradient(to top right, var(--mix-color-one), var(--mix-color-two));
+}
+
+.bg-header{
+    background-color: var(--bg-header-color);
+}
+
+    /*Border*/
+.no-border {
+    border: var(--no-border);
+}
 
 /*Estilos personalizados Velky*/
+
+.p-header{
+    padding: 20px;
+    height: 80px;
+}
+
+.p-header p{
+    align-self: center;
+}
+
+.header-box{
+    flex: 1;
+    max-width: 700px;
+}
+
+.header-box li {
+    flex: 1;
+    transition: box-shadow 0.3s ease;
+}
+
+.header-box li:hover {
+    box-shadow: 16px 19px 11px -12px rgba(32,36,42,0.36);
+}
+
+.header-box li:hover a{
+    color: var(--primary-text-color);
+}
+
+.about-us{
+    padding: 40px 100px;
+    height: calc(100vh - 80px)
+}
 
 /*Estilos personalizados Oscar*/
 
