@@ -7,39 +7,69 @@
     --secondary-text-color: #fafafa;
     --anchore-text-color: #465062;
     --strong-text-color: #bf6ab2;
-    --dragadado: #9468bd;
+    --degradado: #9468bd;
+    --footer-text-color: #718096;
 
     /* Background color*/
     --bg-header-color: #fafafa;
     --bg-about-color: #ddeedd;
+    --bg-footer-color: #f7f7fa;
 
     --mix-color-one: #5a1895;
     --mix-color-two: #483ed9;
 
     /* FONT */
-    --f-family: Arial;
-    --titles-font-size: 24px;
-    --hover-text: 18px;
+    --f-family: 'Inter', Arial, sans-serif;
+    --marca-font-size: 24px;
+    --title-font-size: 64px;
+    --title-footer-font-size: 18px;
+    --subtitle-font-size: 20px;
     --text-md: 14px;
+    --hover-text: 18px;
+    --line-height-md: 1.5;
+
+    --subtitle-letter-spacing: 1px;
+
+    --strong-line: bolder;
+    --soft-line: 300;
+    --footer-title: 600;
+
+    --text-wrap: pretty;
 
     /* DISPLAYS */
     --flex: flex;
     --grid: grid;
+    --block: block;
+
+    /* Directions */
+    --column: column;
 
     --grid-two-columns: 1fr 1fr;
+    --grid-four-columns: 1fr 1fr 1fr 1fr;
 
     /*Border*/
     --b-radius-md: 4px;
     --b-radius-xl: 8px;
+    --b-radius-circle: 50%;
     --no-border: none;
-    --bottom-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+
+    --border-top: 1px solid #34043dff;
+
+    --bottom-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    --redes-shadow: -1px 15px 41px -6px rgba(32,36,42,0.61);
 
     /* Ancho y alto */
     --all-width: 100%;
     --all-heigth: 100%;
+    --half-width: 50%;
+    --half-heigth: 70%;
+    --fit-width: fit-content;
 
-    /* Paddings*/
-    --button-size: 10px 20px;
+    /* Paddings y margins */
+    --contact-button-size: 10px 20px;
+    --principal-button-size: 20px 30px;
+    --margin-bottom: 50px;
+    --margin-bottom-footer: 20px;
 
     /* Justify Content*/
     --j-around: space-around;
@@ -50,13 +80,20 @@
     /* ALign Items*/
     --a-center: center;
     --a-stretch: stretch;
+    --a-self-s: flex-start;
+    --a-self-e: flex-end;
 
 
     /* List and anchore style*/
     --ul-style: none;
     --a-style: none;
 
+    /* cursor */
+    --cursor: pointer;
+
     /*Estilos Velky*/
+
+    --icon-size: 25px;
 
     /*Estilos Oscar*/
 
@@ -76,14 +113,29 @@
     /* Displays */
 .flex{
     display: var(--flex);
+    
 }
 
 .grid {
-    display: grid;
+    display: var(--grid);
+}
+
+.block {
+    display: var(--block);
 }
 
 .grid-two-columns{
     grid-template-columns: var(--grid-two-columns);
+}
+
+.grid-four-columns{
+    grid-template-columns: var(--grid-four-columns);
+}
+
+    /* Directions*/
+
+.f-column {
+    flex-direction: column;
 }
 
     /*Font */
@@ -95,10 +147,47 @@
     font-size: var(--text-md);
 }
 
-.title {
-    font-size: var(--titles-font-size);
+.marca {
+    font-size: var(--marca-font-size);
 }
 
+.title {
+    font-size: var(--title-font-size);
+}
+
+.footer-title {
+    font-size: var(--title-footer-font-size);
+}
+
+.subtitle {
+    font-size: var(--subtitle-font-size);
+    width: 0;
+    min-width: 100%;
+}
+
+.line-heigth-md{
+    line-height: var(--line-height-md);
+}
+
+.subtitle-spacing {
+    letter-spacing: var(--subtitle-letter-spacing);
+}
+
+.line-strong{
+    font-weight: var(--strong-line);
+}
+
+.line-soft{
+    font-weight: var(--soft-line);
+}
+
+.footer-title-weight {
+    font-weight: var(--footer-title);
+}
+
+.text-wrap {
+    text-wrap: var(--text-wrap);
+}
     /*Ancho y Alto*/
 .all-width {
     width: var(--all-width);
@@ -108,10 +197,34 @@
     height: var(--all-heigth);
 }
 
+.half-width {
+    width: var(--half-width);
+}
+
+.half-heigth {
+    height: var(--half-heigth);
+}
+
+.fit-width {
+    width: var(--fit-width);
+}
+
     /* Paddings */
 
-.button-size{
-    padding: var(--button-size);
+.c-button-size{
+    padding: var(--contact-button-size);
+}
+
+.p-button-size {
+    padding: var(--principal-button-size);
+}
+
+.margin-bottom {
+    margin-bottom: var(--margin-bottom);
+}
+
+.margin-bottom-footer {
+    margin-bottom: var(--margin-bottom-footer);
 }
 
     /* Jusitfy Content*/
@@ -136,14 +249,37 @@
     align-items: var(--a-stretch);
 }
 
+.a-self-start {
+    align-self: var(--a-self-s);
+}
 
+.a-self-end {
+    align-self: var(--a-self-e);
+}
     /* Border */
 .b-medium-radius{
     border-radius: var(--b-radius-md);
 }
 
+.b-xl-radius {
+    border-radius: var(--b-radius-xl);
+}
+
+.b-circle {
+    border-radius: var(--b-radius-circle);
+
+}
+
+.border-top {
+    border-top: var(--border-top);
+}
+
 .bottom-shadow {
     box-shadow: var(--bottom-shadow)
+}
+
+.redes-shadow {
+    box-shadow: var(--redes-shadow);
 }
 
     /* List y anchore style*/
@@ -164,7 +300,22 @@
     color: var(--secondary-text-color);
 }
 
-    /* Backgound y Mixed Colors*/
+.strong-color {
+    color: var(--strong-text-color)
+}
+
+.degradado-color {
+    background: linear-gradient(var(--degradado), var(--strong-text-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.footer-text-color {
+    color: var(--footer-text-color);
+}
+
+/* Backgound y Mixed Colors*/
 .bg-mix-one {
     background: linear-gradient(to top right, var(--mix-color-one), var(--mix-color-two));
 }
@@ -173,9 +324,21 @@
     background-color: var(--bg-header-color);
 }
 
+.bg-footer {
+    background-color: var(--bg-footer-color);
+}
+
+.button-bg-color {
+    background-color: var(--mix-color-two)
+}
     /*Border*/
 .no-border {
     border: var(--no-border);
+}
+
+    /* Cursor */
+.cursor-button {
+    cursor: var(--cursor);
 }
 
 /*Estilos personalizados Velky*/
@@ -208,8 +371,40 @@
 }
 
 .about-us{
-    padding: 40px 100px;
-    height: calc(100vh - 80px)
+    padding: 25px 80px;
+    height: calc(100vh - 80px);
+    gap: 30px
+}
+
+.footer {
+    gap: 50px;
+    padding-bottom: 100px;
+}
+
+.footer-column {
+    padding: 20px 40px 0 40px;
+}
+
+.footer-ul {
+    gap: 15px;
+}
+
+.footer-contact {
+    gap: 20px;
+}
+
+.icon-size {
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+.redes .box-icon {
+    padding: 10px;
+    
+}
+
+.copyrigth {
+    padding: 4px;
 }
 
 /*Estilos personalizados Oscar*/
