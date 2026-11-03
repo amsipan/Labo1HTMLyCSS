@@ -24,7 +24,7 @@
     --title-font-size: 64px;
     --title-footer-font-size: 18px;
     --subtitle-font-size: 20px;
-    --text-md: 14px;
+    --text-md: 15px;
     --hover-text: 18px;
     --line-height-md: 1.5;
 
@@ -53,7 +53,7 @@
     --b-radius-circle: 50%;
     --no-border: none;
 
-    --border-top: 1px solid #34043dff;
+    --border: 1px solid #e6dbed;
 
     --bottom-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     --redes-shadow: -1px 15px 41px -6px rgba(32,36,42,0.61);
@@ -98,7 +98,23 @@
     /*Estilos Oscar*/
 
     /*Estilos Jorge*/
-
+    --tam-letra-titulo-seccion: 23px;
+    --grosor-letra-medio-delgada: 400;
+    --espaciado-titulos: 15px;
+    --bgcolor-primario: #fafbfb;
+    --bgcolor-secundario: #f7f6fa;
+    --padding-des-dev: 90px;
+    --padding-bajo-subt: 100px;
+    --padding-elem-tarjeta: 33px;
+    --largo-tarjeta: 260px;
+    --color-txt-pequeño: #5a6666;
+    --color-ux1: #29272e;
+    --color-ux2: #6accf3;
+    --color-ux3: #fe81aa;
+    --color-ux4: #54e9d6;
+    --color-ux5: #fdd268;
+    --color-ux6: #cd5284;
+    --margin-tarj: 15px;
     /*Estilos Jhonny*/
 }
 
@@ -165,6 +181,7 @@
     min-width: 100%;
 }
 
+/*interlineado*/
 .line-heigth-md{
     line-height: var(--line-height-md);
 }
@@ -271,7 +288,7 @@
 }
 
 .border-top {
-    border-top: var(--border-top);
+    border-top: var(--border);
 }
 
 .bottom-shadow {
@@ -410,5 +427,85 @@
 /*Estilos personalizados Oscar*/
 
 /*Estilos personalizados Jorge*/
+.tam-titulo-seccion {
+    font-size: var(--tam-letra-titulo-seccion);
+}
+
+.letra-medio-delgada {
+    font-weight: var(--grosor-letra-medio-delgada);
+}
+
+.espacio-titulos {
+    margin-bottom: var(--espaciado-titulos);
+}
+
+.color-fondo-secundario {
+    background-color: var(--bgcolor-secundario);
+}
+
+.color-fondo-primario {
+    background-color: var(--bgcolor-primario);
+}
+
+.bordes{
+    border: var(--border);
+}
+
+.padding-seccion-des-dev {
+    padding: var(--padding-des-dev);
+}
+
+.espacio-subt-cuadros {
+    padding-bottom: var(--padding-bajo-subt);
+}
+
+.padding-tarjeta {
+    padding: var(--padding-elem-tarjeta);
+}
+
+.padding-img-cuadro {
+    padding-top: var(--padding-elem-tarjeta);
+    padding-right: var(--padding-elem-tarjeta);
+}
+
+.espacio-titulo-parrafo {
+    padding-bottom: var(--espaciado-titulos);
+}
+
+.tamaño-tarjeta {
+    height: var(--largo-tarjeta);
+}
+
+.margin-tarjeta {
+    margin: var(--margin-tarj);
+}
+
+.color-txt-pequeño {
+    color: var(--color-txt-pequeño);
+}
+
+.color-ux1 {
+    color: var(--color-ux1);
+}
+
+.color-ux2 {
+    color: var(--color-ux2);
+}
+
+.color-ux3 {
+    color: var(--color-ux3);
+}
+
+.color-ux4 {
+    color: var(--color-ux4);
+}
+
+.color-ux5 {
+    color: var(--color-ux5);
+}
+
+.color-ux6 {
+    color: var(--color-ux6);
+}
 
 /*Estilos personalizados Jhonny*/
