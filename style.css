@@ -116,6 +116,22 @@
     --color-ux6: #cd5284;
     --margin-tarj: 15px;
     /*Estilos Jhonny*/
+
+    --fr-container-width: 1196px;
+    --fr-section-padding: 20px 24px 56px;
+    --fr-gap: 60px;
+    --fr-title-size: 36px;
+    --fr-title-line-height: 1.55;
+    --fr-title-strong-weight: 700;
+    --fr-title-margin: 62px;
+    --fr-card-radius: 12px;
+    --fr-img-ratio: 317 / 218;
+    --fr-text-size: 16px;
+    --fr-text-line-height: 1.55;
+    --fr-text-margin: 20px 0 22px;
+    --fr-link-weight: 500;
+    --fr-link-gap: 16px;
+    --fr-arrow-size: 24px;
 }
 
 * {
@@ -509,3 +525,57 @@
 }
 
 /*Estilos personalizados Jhonny*/
+
+/* Featured Resources */
+
+.fr-section {
+    padding: var(--fr-section-padding);
+}
+
+.fr-container {
+    max-width: var(--fr-container-width);
+    margin: 0 auto;
+}
+
+.fr-title {
+    font-size: var(--fr-title-size);
+    line-height: var(--fr-title-line-height);
+    color: var(--primary-text-color);
+    text-align: center;
+    margin-bottom: var(--fr-title-margin);
+}
+
+.fr-title-strong {
+    font-weight: var(--fr-title-strong-weight);
+}
+
+.fr-grid {
+    gap: var(--fr-gap);
+}
+
+.fr-card-img {
+    display: block;
+    width: var(--all-width);
+    aspect-ratio: var(--fr-img-ratio);
+    object-fit: cover;
+    border-radius: var(--fr-card-radius);
+}
+
+.fr-card-text {
+    font-size: var(--fr-text-size);
+    line-height: var(--fr-text-line-height);
+    color: var(--primary-text-color);
+    margin: var(--fr-text-margin);
+}
+
+.fr-read-more {
+    gap: var(--fr-link-gap);
+    font-size: var(--fr-text-size);
+    font-weight: var(--fr-link-weight);
+    color: var(--mix-color-one);
+}
+
+.fr-arrow {
+    width: var(--fr-arrow-size);
+    height: var(--fr-arrow-size);
+}
